@@ -1,0 +1,26 @@
+version: '3.6'
+
+services:
+  db:
+    image: postgres:10.1-alpine
+    container_name: postgres_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+  web:
+    container_name: project51-backend
+    image: my_image:0.0.2
+    command: python /app/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    environment:
+      - DJANGO_SECRET_KEY=(cls2rl1ax0u5!3$d#7ilr++x2ra!@wn!0ysa$d1^^$$*_4d2*g
+      - DJANGO_SETTINGS_MODULE=testt.settings
+    depends_on:
+      - db
+    networks:
+      - default
+    restart: always
+volumes:
+  postgres_data:
