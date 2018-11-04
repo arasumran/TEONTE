@@ -1,0 +1,2 @@
+# TEONTE
+Django + Dockerize
