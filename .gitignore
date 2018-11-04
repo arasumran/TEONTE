@@ -23,7 +23,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.idea/
+.idea/
 MANIFEST
 
 # PyInstaller
@@ -106,4 +106,12 @@ venv.bak/
 
 .idea/
 /.idea/
+
+
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+
+idea/
 
