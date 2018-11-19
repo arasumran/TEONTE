@@ -39,5 +39,5 @@ class UserDataStorageSerializers(serializers.ModelSerializer):
 
     def validate(self, attrs):
         if attrs['watch_count'] > User.objects.count():
-            raise serializers.ValidationError("watch count must be smaller : {} ".format(User.objects.count()))
+            raise serializers.ValidationError("watch count must be smaller than : {} ".format(User.objects.count()))
         return attrs
