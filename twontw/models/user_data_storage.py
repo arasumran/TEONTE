@@ -16,7 +16,7 @@ STATUS = (('ACTIVE', 'ACTIVE'), ('IN_QUEUE', 'IN_QUEUE'), ('FINISHED', 'FINISHED
 
 
 class UserDataStorageModel(AuditMixin):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     url_link = models.URLField()
     url_category = models.CharField(choices=CATEGORIES, max_length=255)
     url_desc = models.TextField()

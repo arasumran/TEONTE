@@ -1,3 +1,2 @@
-from .get_hello_task import *
-
-__all__ = ['get_hello_task']
+from .move_to_queue_task import *
+__all__ = ['move_to_queue_task']
