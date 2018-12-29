@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="PostgreSQL - project51db@127.0.0.1" uuid="610d20af-4675-483c-b2b5-239c19e84ab3">
+    <data-source name="PROJECT51DB" uuid="610d20af-4675-483c-b2b5-239c19e84ab3">
       <secret-storage>master_key</secret-storage>
       <user-name>umran</user-name>
       <schema-pattern>project51db.pg_catalog project51db.public</schema-pattern>

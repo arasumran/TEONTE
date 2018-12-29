@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="PostgreSQL - project51db@127.0.0.1" uuid="610d20af-4675-483c-b2b5-239c19e84ab3">
+  <data-source name="PROJECT51DB" uuid="610d20af-4675-483c-b2b5-239c19e84ab3">
     <database-info product="PostgreSQL" version="10.4 (Ubuntu 10.4-2.pgdg16.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.1">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>

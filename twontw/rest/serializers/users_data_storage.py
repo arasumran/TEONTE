@@ -35,6 +35,7 @@ class UserDataStorageSerializers(serializers.ModelSerializer):
             if i == 2:
                 seconds = int(time_calculator_list[i]) * 360 + seconds
         obj.url_time = seconds
+        driver.close()
         return obj.url_time
 
     def validate(self, attrs):
